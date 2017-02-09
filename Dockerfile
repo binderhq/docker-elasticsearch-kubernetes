@@ -8,3 +8,5 @@ ADD config /elasticsearch/config
 # Set environment
 ENV NAMESPACE default
 ENV DISCOVERY_SERVICE elasticsearch-discovery
+
+RUN /elasticsearch/bin/elasticsearch-plugin install ingest-attachment --batch
