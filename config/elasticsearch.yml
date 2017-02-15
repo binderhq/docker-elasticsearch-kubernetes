@@ -26,4 +26,9 @@ http:
 discovery:
   zen:
     ping.unicast.hosts: ${DISCOVERY_SERVICE}
+    ping_timeout: 3s
     minimum_master_nodes: ${NUMBER_OF_MASTERS}
+    fd:
+      ping_interval: 1s
+      ping_timeout: 3s
+      ping_retries: 3
